@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CashRegister_WPF"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="500">
     <Grid>
-        <TextBox x:Name="txbPrice" HorizontalAlignment="Left" Height="45" Margin="117,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="tbxPrice" HorizontalAlignment="Left" Height="45" Margin="117,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
         <Label x:Name="lblPrice" Content="Pris:" HorizontalAlignment="Left" Margin="62,24,0,0" VerticalAlignment="Top" Height="45" Width="50"/>
-        <Label x:Name="lblPayed" Content="Payed:" HorizontalAlignment="Left" Margin="272,24,0,0" VerticalAlignment="Top" Height="45" Width="50"/>
-        <TextBox x:Name="txbPayed" HorizontalAlignment="Left" Height="45" Margin="327,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="btnCalcChange" Content="Beräkna växel" HorizontalAlignment="Left" Margin="62,87,0,0" VerticalAlignment="Top" Width="365" Height="45"/>
-        <Grid HorizontalAlignment="Left" Height="272" Margin="62,137,0,0" VerticalAlignment="Top" Width="365">
+        <Label x:Name="lblPayed" Content="Betalat:" HorizontalAlignment="Left" Margin="272,24,0,0" VerticalAlignment="Top" Height="45" Width="50"/>
+        <TextBox x:Name="tbxPayed" HorizontalAlignment="Left" Height="45" Margin="327,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnCalcChange" Content="Beräkna växel" HorizontalAlignment="Left" Margin="62,79,0,0" VerticalAlignment="Top" Width="365" Height="45" Click="BtnCalcChange_Click"/>
+        <Grid HorizontalAlignment="Left" Height="272" Margin="62,124,0,0" VerticalAlignment="Top" Width="365">
             <Label x:Name="lbl1000" Content="0" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="38"/>
             <Label x:Name="lbl500" Content="0" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="38"/>
             <Label x:Name="lbl200" Content="0" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Width="38"/>
