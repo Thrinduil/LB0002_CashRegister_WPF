@@ -16,6 +16,10 @@ namespace CashRegister_WPF
             InitializeComponent();
         }
 
+        /// <summary>
+        /// Gets price for item and money tentered by customer
+        /// </summary>
+        /// <returns>Tuple with price as first item and payed as second item</returns>
         public Tuple<int, int> GetPriceAndPayed()
         {
             int price = 0;
@@ -36,6 +40,11 @@ namespace CashRegister_WPF
             return new Tuple<int, int>(price, payed);
         }
 
+        /// <summary>
+        /// Calculate change denominations when button is clicked
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BtnCalcChange_Click(object sender, RoutedEventArgs e)
         {
             CashRegister cashRegister = new CashRegister();
@@ -47,6 +56,10 @@ namespace CashRegister_WPF
             DisplayChange(change);
         }
 
+        /// <summary>
+        /// Display the calculated change
+        /// </summary>
+        /// <param name="change"></param>
         private void DisplayChange(List<int> change)
         {
             lbl1000.Content = change.Where(item => item == 1000).Count();
@@ -64,8 +77,14 @@ namespace CashRegister_WPF
 
     class CashRegister
     {
-        private readonly int[] drawer = new int[] { 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1 }
+        private readonly int[] drawer = new int[] { 1000, 500, 200, 100, 50, 20, 10, 5, 2, 1 };
 
+        /// <summary>
+        /// Calculate change based on price and money paid
+        /// </summary>
+        /// <param name="price"></param>
+        /// <param name="payed"></param>
+        /// <returns></returns>
         public List<int> MakeChange(int price, int payed)
         {
             int difference = payed - price;
