@@ -7,6 +7,33 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox x:Name="txbPrice" HorizontalAlignment="Left" Height="45" Margin="117,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="lblPrice" Content="Pris:" HorizontalAlignment="Left" Margin="62,24,0,0" VerticalAlignment="Top" Height="45" Width="50"/>
+        <Label x:Name="lblPayed" Content="Payed:" HorizontalAlignment="Left" Margin="272,24,0,0" VerticalAlignment="Top" Height="45" Width="50"/>
+        <TextBox x:Name="txbPayed" HorizontalAlignment="Left" Height="45" Margin="327,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="btnCalcChange" Content="Beräkna växel" HorizontalAlignment="Left" Margin="62,87,0,0" VerticalAlignment="Top" Width="365" Height="45"/>
+        <Grid HorizontalAlignment="Left" Height="272" Margin="62,137,0,0" VerticalAlignment="Top" Width="365">
+            <Label x:Name="lbl1000" Content="0" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="38"/>
+            <Label x:Name="lbl500" Content="0" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Width="38"/>
+            <Label x:Name="lbl200" Content="0" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" Width="38"/>
+            <Label x:Name="lbl100" Content="0" HorizontalAlignment="Left" Margin="10,88,0,0" VerticalAlignment="Top" Width="38"/>
+            <Label x:Name="lbl50" Content="0" HorizontalAlignment="Left" Margin="10,114,0,0" VerticalAlignment="Top" Width="38"/>
+            <Label x:Name="lbl20" Content="0" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" Width="38"/>
+            <Label x:Name="lbl10" Content="0" HorizontalAlignment="Left" Margin="10,166,0,0" VerticalAlignment="Top" Width="38"/>
+            <Label x:Name="lbl5" Content="0" HorizontalAlignment="Left" Margin="10,192,0,0" VerticalAlignment="Top" Width="38"/>
+            <Label x:Name="lbl2" Content="0" HorizontalAlignment="Left" Margin="10,218,0,0" VerticalAlignment="Top" Width="38"/>
+            <Label x:Name="lbl1" Content="0" HorizontalAlignment="Left" Margin="10,244,0,0" VerticalAlignment="Top" Width="38"/>
+            <Label Content="1000-lappar" HorizontalAlignment="Left" Margin="53,10,0,0" VerticalAlignment="Top" Width="302"/>
+            <Label Content="500-lappar" HorizontalAlignment="Left" Margin="53,36,0,0" VerticalAlignment="Top" Width="302"/>
+            <Label Content="200-lappar" HorizontalAlignment="Left" Margin="53,62,0,0" VerticalAlignment="Top" Width="302"/>
+            <Label Content="100-lappar" HorizontalAlignment="Left" Margin="53,88,0,0" VerticalAlignment="Top" Width="302"/>
+            <Label Content="50-lappar" HorizontalAlignment="Left" Margin="53,114,0,0" VerticalAlignment="Top" Width="302"/>
+            <Label Content="20-lappar" HorizontalAlignment="Left" Margin="53,140,0,0" VerticalAlignment="Top" Width="302"/>
+            <Label Content="10-kronor" HorizontalAlignment="Left" Margin="53,166,0,0" VerticalAlignment="Top" Width="302"/>
+            <Label Content="5-kronor" HorizontalAlignment="Left" Margin="53,192,0,0" VerticalAlignment="Top" Width="302"/>
+            <Label Content="2-kronor" HorizontalAlignment="Left" Margin="53,218,0,0" VerticalAlignment="Top" Width="302"/>
+            <Label Content="1-kronor" HorizontalAlignment="Left" Margin="53,244,0,0" VerticalAlignment="Top" Width="302"/>
+        </Grid>
+
     </Grid>
 </Window>
